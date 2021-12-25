@@ -58,6 +58,7 @@ return packer.startup(function(use)
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'} -- bufferline
+    use 'glepnir/dashboard-nvim' -- a startup menu
 
 
     -- Completions
@@ -91,7 +92,13 @@ return packer.startup(function(use)
         requires = {
             'nvim-lua/plenary.nvim'
             }
-        }
+    }
+
+    -- Telescope Nvim -> Fuzzy Finder
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
 
 
 

@@ -7,3 +7,5 @@ end
 -- require both files of "settings" dir
 require("user.lsp.lsp-installer")
 require("user.lsp.handlers").setup()
+-- julia 
+require'lspconfig'.julials.setup{}

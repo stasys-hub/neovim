@@ -9,20 +9,20 @@ vim.g.mapleader = " "
 vim.gmaplocalleader = " "
 
 -- Better window navigation
-keymap("n", "<A-h>", "<C-w>h", opts)
-keymap("n", "<A-j>", "<C-w>j", opts)
-keymap("n", "<A-k>", "<C-w>k", opts)
-keymap("n", "<A-l>", "<C-w>l", opts)
+-- keymap("n", "<A-h>", "<C-w>h", opts)
+-- keymap("n", "<A-j>", "<C-w>j", opts)
+-- keymap("n", "<A-k>", "<C-w>k", opts)
+-- keymap("n", "<A-l>", "<C-w>l", opts)
 
 -- custom commands:
 -- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize +2<CR>", opts)
-keymap("n", "<C-Down>", ":resize -2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+-- keymap("n", "<C-Up>", ":resize +5<CR>", opts)
+-- keymap("n", "<C-Down>", ":resize -5<CR>", opts)
+-- keymap("n", "<C-Left>", ":vertical:resize -5<CR>", opts)
+-- keymap("n", "<C-Right>", ":vertical:resize +5<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -34,4 +34,10 @@ keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fb", ":resize buffers<CR>>", opts)
 keymap("n", "<leader>fh", ":resize help_tags<CR>>", opts)
 
+-- trun off highlight search
+keymap("n", "<leader>,", ":nohlsearch<CR>", opts)
 
+-- copy to system clipboard with leader prefix
+keymap("n", "<leader>y", '<"+y>', opts)
+
+keymap("n", "<leader>t", ":FTermOpen<CR>", opts)

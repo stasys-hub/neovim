@@ -83,6 +83,13 @@ return packer.startup(function(use)
         run = ':TSUpdate'
     }
 
+    use {
+        'lewis6991/spellsitter.nvim',
+        config = function()
+            require('spellsitter').setup()
+        end
+        }
+
     -- a floating terminal
     use "numToStr/FTerm.nvim"
 
@@ -100,7 +107,15 @@ return packer.startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- move lines visually
+    use "matze/vim-move"
 
+
+    -- comment multiple lines
+    use 'tpope/vim-commentary'
+
+    -- send to adjescent window
+    use 'karoliskoncevicius/vim-sendtowindow'
 
 
 

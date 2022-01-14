@@ -179,14 +179,39 @@ _G.packer_plugins = {
     path = "/home/vim-diesel/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["spellsitter.nvim"] = {
+    config = { "\27LJ\1\0029\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\16spellsitter\frequire\0" },
+    loaded = true,
+    path = "/home/vim-diesel/.local/share/nvim/site/pack/packer/start/spellsitter.nvim",
+    url = "https://github.com/lewis6991/spellsitter.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/vim-diesel/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/vim-diesel/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-move"] = {
+    loaded = true,
+    path = "/home/vim-diesel/.local/share/nvim/site/pack/packer/start/vim-move",
+    url = "https://github.com/matze/vim-move"
+  },
+  ["vim-sendtowindow"] = {
+    loaded = true,
+    path = "/home/vim-diesel/.local/share/nvim/site/pack/packer/start/vim-sendtowindow",
+    url = "https://github.com/karoliskoncevicius/vim-sendtowindow"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: spellsitter.nvim
+time([[Config for spellsitter.nvim]], true)
+try_loadstring("\27LJ\1\0029\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\16spellsitter\frequire\0", "config", "spellsitter.nvim")
+time([[Config for spellsitter.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

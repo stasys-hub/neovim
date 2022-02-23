@@ -91,8 +91,8 @@ return packer.startup(function(use)
         }
 
     -- a floating terminal
-    use "numToStr/FTerm.nvim"
-
+    -- use "numToStr/FTerm.nvim"
+    use {"akinsho/toggleterm.nvim"}
     -- Git integration
     use {
         'lewis6991/gitsigns.nvim',

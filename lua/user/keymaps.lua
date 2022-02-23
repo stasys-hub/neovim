@@ -9,10 +9,10 @@ vim.g.mapleader = " "
 vim.gmaplocalleader = " "
 
 -- Better window navigation
--- keymap("n", "<A-h>", "<C-w>h", opts)
--- keymap("n", "<A-j>", "<C-w>j", opts)
--- keymap("n", "<A-k>", "<C-w>k", opts)
--- keymap("n", "<A-l>", "<C-w>l", opts)
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- custom commands:
 -- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
